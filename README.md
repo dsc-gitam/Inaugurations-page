@@ -13,13 +13,13 @@
 
 
 Use in the various prestigious inauguration events of GITAM, such as  <br>
-1. Adhva Launch Event (@CT3)
-2. G-Explore Launch Event (@GLEARN)
+1. Adhva Launch Event (@_CT3_)
+2. G-Explore Launch Event (@_GLEARN_)
 3. LinkedIn Premium Launch Event. <br>
+And many more...  <br>
 By our 
-	- Hon’ble Sir.Siva Rama Krishna Vice Chancellor (GITAM University), 
-	- Hon’ble Dr. D. Gunasekaran Registrar (GITAM University). 
-And many more... 
+	- **Hon’ble Sir.Siva Rama Krishna _Vice Chancellor_ (GITAM University)**, 
+	- **Hon’ble Dr. D. Gunasekaran _Registrar_ (GITAM University)**.
 
 ### Tech
 ```
