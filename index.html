@@ -1,0 +1,533 @@
+<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
+<html>
+
+<head>
+  <title>GCGC X LinkedIn</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="Description"
+    content="Curtain Opening Effect Using jQuery And CSS In this tutorial we will show you how to create a curtain opening effect using jQuery and CSS">
+  <meta property="og:image" content="http://talkerscode.com/webtricks/images/curtain_opening_effect.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="includes/big_display_style.css">
+  <link rel="stylesheet" type="text/css" href="includes/middle_display_style.css">
+  <link rel="stylesheet" type="text/css" href="includes/small_display_style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;0,700;0,800;1,500;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@1&display=swap" rel="stylesheet">
+
+  <link href="http://fonts.cdnfonts.com/css/samarkan" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+  <link href="http://fonts.cdnfonts.com/css/samarkan" rel="stylesheet">
+  <style>
+    @import url('http://fonts.cdnfonts.com/css/samarkan');
+  </style>
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src='script.js'>
+  </script>
+  <script type="text/javascript">
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"></script>
+  <script>
+// let gitamlogo = document.getElementById("gitamlogo")
+//   window.addEventListener('load', (event) => {
+        //    let logo =  document.getElementById("gitamlogo")
+        //    logo.remove()
+        // });
+
+        function open_curtain() {
+          $("#curtain1").animate({width: 40}, 15000);
+          $("#curtain2").animate({width: 40}, 15000);
+          let t = document.getElementById('oncurtainRigth');
+          t.innerHTML = "";
+          t = document.getElementById('oncurtainLeft');
+          t.innerHTML = "";
+          t = document.getElementById('x101');
+          t.innerHTML = "";
+          t = document.getElementById('x102');
+          t.innerHTML = "";
+          // t = document.getElementById('x111').style.visibility="hidden";
+          // t.innerHTML="";
+          t = document.getElementById('x109').style.visibility = "hidden";
+          t = document.getElementById('x103').style.visibility = "hidden";
+          setTimeout(() => {
+            document.getElementById('x109').style.visibility = 'visible';
+          }, 12000);
+          //document.getElementById('bigpic').style.display='block';
+          setTimeout(() => {
+            document.getElementById('bigpic').style.display = 'block';
+
+          }, 12000);
+          setTimeout(() => {
+            document.getElementById('bigpic2').style.display = 'block';
+          }, 12000);
+          var x = document.getElementById("myAudio");
+          x.play();
+          setTimeout(() => {
+
+          })
+        }
+// document.getElementById("x2000").addEventListener("click",open_curtain)
+
+// setTimeout(()=>{
+
+//   document.getElementById('x109').style.display="block";
+// }, 5000)
+  </script>
+
+</head>
+<style>
+  body {
+    background-color: #333;
+    /* font-family: cursive !important; */
+    font-family: 'Pushster', cursive;
+    font-size: 35px;
+  }
+
+  path {
+    fill: transparent;
+  }
+
+  text {
+    fill: #FF9800;
+  }
+
+  body {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+    font-family: helvetica;
+    background-color: black;
+  }
+
+  #wrapper {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0px;
+    height: 100vh;
+  }
+
+  h1 {
+    margin-top: 50px;
+    color: #610B0B;
+  }
+
+  h1 p {}
+
+  #effect {
+    background-color: black;
+    position: absolute;
+    z-index: -10;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    position: -webkit-sticky;
+    position: sticky;
+    box-shadow: 0px 0px 10px 0px #610B0B;
+  }
+
+  #effect p {
+    margin-top: 10px;
+
+    color: #F79F81;
+  }
+
+  #curtain1 {
+    top: 0px;
+    position: absolute;
+    left: 0px;
+    width: 50%;
+    height: 100vh;
+  }
+
+  #curtain2 {
+    top: 0px;
+    position: absolute;
+    height: 100vh;
+    width: 50%;
+    right: 0px;
+  }
+
+  #curtain_buttons input[type="button"] {
+    margin-top: 20px;
+    width: 184px;
+    height: 58px;
+    font-size:1.3rem;
+    border-radius: 2px;
+    position: absolute;
+    top: 10%;
+    z-index: 100;
+    color: white;
+    background-color: #B43104;
+    border: none;
+    border-bottom: 6px solid #8A2908;
+  }
+
+  .onCurtain {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 40%;
+
+    color: white;
+  }
+
+  .newLine {
+    display: flex;
+  }
+
+  #diya_left {
+
+
+    #103 {
+      display: inline-block;
+      font-size: 24px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+    }
+
+    #103:hover {
+      background-color: #3e8e41;
+    }
+
+    #103:activate {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+
+    .bar {
+      color: #FFF;
+      background-color: #a047c6;
+      padding: 35px;
+      width: 400px;
+      margin: 50px auto 0;
+      font: 35px/50px 'Bree Serif', Courier, monospaced;
+      text-align: center;
+      position: relative;
+      text-transform: uppercase;
+      border: 2px transparent solid;
+      box-shadow: 0 10px 30px -10px gray;
+    }
+
+    .bar span {
+      position: absolute;
+    }
+
+    .bar span:nth-child(1),
+    .bar span:nth-child(3) {
+      border-style: solid;
+      border-width: 15px;
+      z-index: -1;
+    }
+
+    .bar span:nth-child(1) {
+      border-color: #000 #000 transparent transparent;
+      top: 120px;
+      left: -2px;
+    }
+
+    .bar span:nth-child(3) {
+      border-color: #000 transparent transparent #000;
+      top: 120px;
+      left: 442px;
+    }
+
+    .bar span:nth-child(2),
+    .bar span:nth-child(4) {
+      top: 30px;
+      border-style: solid;
+      border-width: 60px;
+      z-index: -2;
+    }
+
+    .bar span:nth-child(2) {
+      border-color: #6f3289 #6f3289 #6f3289 transparent;
+      left: -90px;
+      box-shadow: 20px 20px 30px -10px grey;
+    }
+
+    .bar span:nth-child(4) {
+      border-color: #6f3289 transparent #6f3289 #6f3289;
+
+      left: 440px;
+      box-shadow: -20px 19px 30px -10px grey;
+    }
+
+    #linkad_middle {
+      margin-top: 60%;
+
+    }
+
+    #x109 {
+      background-color: #4CAF50;
+      /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+</style>
+</head>
+
+<body>
+  <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+
+  <center>
+
+  </center>
+  <div>
+    <audio id="myAudio">
+      <source src="trimmed2.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+  <center>
+    <div class="onCurtain" style=" position: absolute;
+    height: 289px;
+    width: 400px;
+    margin: -100px 0 0 -200px;
+    top: 40%;
+    left: 50%;">
+      <div style="
+    top: -216px;
+    position: relative;
+    left: -230px;
+    ;
+    " id="x101">
+        
+         <h3 style=" 
+    text-align: center;
+    color: white;
+    font-weight: 350;
+    margin-top:30%;
+    color: white;
+    font-weight: 350;
+    margin-top: 15%;
+    font-size: 2.5rem;
+    width: 210%;">
+
+          <div id='x106' style="width: 100%;"><b>GITAM Career Guidance Center (GCGC)</b>
+        </h3>
+        <br>
+        <div class="x104">
+          <div style="width: 131%;">
+          <div><p style="margin: 4px; font-size:2.2rem;"> In Association With <span style="color:#0072b1"><img src="linkedin.png" style="width: 36%;
+    position: relative;
+    top: 15px;"></span></p></div>
+          <div><p style="margin: 4px; font-size:2.2rem "> is deligthed to announce the launch of</p><div>
+          <p style="margin: 4px; font-size:2.2rem;"> The <span style="color:gold">Premium</span> Membership Drive</p>
+        </div>
+      </div>
+            </div>
+        </div></div>
+      <div id="flex-container" style="display: flex; padding: 30px;">
+        <div id="oncurtainLeft" style="
+    position: absolute;
+    line-height: 40px;
+    float: left;
+    top: 120px;
+    left: -113%;
+    font-size: 20px;
+        padding: 10px;">
+          Chief Guest:
+          <br>
+          <b>Dr. D. Gunasekaran</b>
+          <br>
+          Registrar
+          <br>
+          GITAM (Deemed to be University)
+        </div>
+        <div>
+          <!-- <button style="">Launch</button> -->
+        </div>
+        <div id="oncurtainRigth" style=" 
+    position: absolute;
+    right: -110%;
+    padding: 10px;
+    line-height: 40px;
+    top: 119px;
+    font-size: 20px;">
+          Guest of Honor:
+          <br>
+          <b>Shri. Ramdas Kannan</b>
+          <br>
+          Growth Partnerships Manager
+          <br>
+          APAC Business Development
+          <br>
+          LinkedIn
+        </div>
+      </div>
+      <style>
+        #x102 {
+          width: 100%;
+        }
+      </style>
+      <div style="padding-top: 0%;"></div>
+      <div id="x102">
+        <div class='oncurtainBottom' style="text-align: center; 
+    width: 100%;   
+    text-align: center;
+    bottom: -11%;
+    left: 23%;
+    font-size: 19px;">
+          <!-- <div> -->
+
+          Keynote Address:
+
+          <br>
+          <b>
+            Shri. Krish Nangegadda
+          </b>
+          <br>
+          Innovation and Entrepreneurship Leader
+          <br>
+          Coach and Angel Investor
+          <br>
+          Chief Innovation Officer (CIO)
+          <br>
+          GITAM (Deemed to be University)
+
+          <!-- </div> -->
+          <!-- <p>29 Dec | Wednesday | 3 PM </p> -->
+          <!-- <p>Visakahpatnam</p> -->
+        </div>
+        <div style="padding-top: 2;"></div>
+        <div class='oncurtainBottom' style="
+    text-align: center;
+    bottom: -56%;
+    left: 8%;
+    font-size: 16px;">
+          <h2>3 June | Friday | 12:00 PM</h2>
+<!--           <p><b>Alumni Relations Office</b></p> -->
+        </div>
+
+      </div>
+      <!--  on curtain -->
+      <!-- div class='onCurtain' style="color:white">
+    <div id='newLine'>
+    <div id=oncurtainLeft>
+      Chef Guest: 
+      K Sivarama Krishna 
+      (Hnbol.Vice Chairman)
+    <button>Launch</button>
+    </div>
+
+    <div id=oncurtainRigth>
+      date&venue:
+      date & time:
+      visakahpatnam:
+    </div>
+    </div>
+  </div> -->
+
+      <div id="linkad_middle" style="margin-top: 54%;">
+        <button id="x109"
+          style="background-color: orange; font-size: medium; padding: 5px; font-weight: bold; border-radius: 5px"><a
+            href="https://mail.google.com/" target="_blank" style="text-decoration: none">Invite Krishna Chaitanya</a></button>
+      </div>
+
+
+  </center>
+  <div id="wrapper">
+    <div id="effect" style="position: relative;">
+      <div id='gitamlogo'>
+        <img id="bigpic" src="https://gitadmissions.gitam.edu/mtechedt/images/gitam-logo.jpg"
+          style="display:none;    width: 17%; padding-left: -4px;" />
+        <img id="bigpic2" src="jpg.jfif" style="display:none;    width: 10%;
+    padding-left: 73%;" />
+      </div>
+      <!-- <img src='0001.jpg' class='bannerImage'> -->
+      <svg viewBox="-200 30 900 900" style="font-size: 51%;padding-top:20px;">
+        <path id="curve" d="M73.2,148.6c4-6.1,65.5-98.8,178.6-95.6c111.3,1.2,160.8,95.3,160.1,107" />
+        <text width="330" style="margin:auto">
+          <textPath xlink:href="#curve">
+              LinkedIn Premium Membership Drive, GITAM
+          </textPath>
+        </text>
+      </svg>
+      <div id='Adhva-intro' style="font-size: 20px;top: 42%;">
+        <p style="color:white">
+        </p>
+        <br>
+        <p style="color:white; font-size: 15px">GCGC in its endeavour to enhance the reach of the student community, has collaborated with LinkedIn to provide LinkedIn Premium Membership to all PFYs.
+<br><br>
+          The Premium account would empower the students to explore world of opportunities including Internships, career avenues and LinkedIn Learning.
+<!--           This portal is going to play an integral role in helping us connect our current student and faculty members
+          with our beloved community of GITAM Alumni.</p> -->
+        <br><br>
+        <div>
+        </div>
+      </div>
+
+      <img src="http://www.talkerscode.com/webtricks/demo/images/curtain1.jpg" id="curtain1">
+      <img src="http://www.talkerscode.com/webtricks/demo/images/curtain2.jpg" id="curtain2">
+      <br>
+      <img src='noloop.gif' class="diya_left" style="left: -3%">
+      <img src='noloop.gif' class="diya_right" style="right: -2%">value="Launch »"
+    </div>
+    <div id="curtain_buttons">
+
+      <!-- Rebbon -->
+      <!-- <button id="x2000" style="
+width:300px;
+    position: absolute;
+    background-color:transparent;
+    border:none;
+    outline:none;
+    top: 40%;
+    left: 43%;"
+    onclick="open_curtain()";>
+<img id="x111"src="ribbon-removebg-preview.png" alt="" width="300" >
+</button> -->
+      <input id="x103" class='launchButton' type="button" class='openButton' value="Launch" onclick="open_curtain();"
+        style="
+    top: 43%;
+    left: 43%;
+    border: none; 
+    color:white;
+    font-weight:bold;
+    background-color: #e0aa3e;
+    borer: none;
+    box-shadow
+    ">
+      <!-- <img src='ribbon.jfif'/> -->
+      </p>
+    </div>
+
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
